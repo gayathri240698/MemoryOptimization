@@ -1,0 +1,1670 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+    <CscToolPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+    <CscToolExe>unity_csc.sh</CscToolExe>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{B9E2DF76-B884-BE29-AF32-6250B83047E3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>AngleSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_2019_3_0;UNITY_2019_3;UNITY_2019;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_ENGINE_CODE_STRIPPING;ENABLE_ONSCREEN_KEYBOARD;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;ENABLE_VIDEO;PLATFORM_IOS;ENABLE_RUNTIME_GI;ENABLE_GAMECENTER;ENABLE_NETWORK;ENABLE_IOS_ON_DEMAND_RESOURCES;ENABLE_IOS_APP_SLICING;PLAYERCONNECTION_LISTENS_FIXED_PORT;DEBUGGER_LISTENS_FIXED_PORT;PLATFORM_SUPPORTS_ADS_ID;SUPPORT_ENVIRONMENT_VARIABLES;PLATFORM_SUPPORTS_PROFILER;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;UNITY_IOS;PLATFORM_IPHONE;UNITY_IPHONE;UNITY_IPHONE_API;SUPPORT_MULTIPLE_DISPLAYS;UNITY_HAS_GOOGLEVR;ENABLE_SPATIALTRACKING;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_PRO_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169;CS0649;IDE0051</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169;CS0649;IDE0051</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UnityProjectGenerator>Unity/VSTU</UnityProjectGenerator>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>iOS:9</UnityBuildTarget>
+    <UnityVersion>2019.3.0f1</UnityVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Attributes\Accessors.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Attributes\DomAccessorAttribute.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Attributes\DomConstructorAttribute.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Attributes\DomDescriptionAttribute.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Attributes\DomExposedAttribute.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Attributes\DomHistoricalAttribute.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Attributes\DomInitDictAttribute.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Attributes\DomLenientThisAttribute.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Attributes\DomLiteralsAttribute.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Attributes\DomNameAttribute.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Attributes\DomNoInterfaceObjectAttribute.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Attributes\DomPutForwardsAttribute.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\AutoSelectedMarkupFormatter.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\BrowsingContext.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\BrowsingContextExtensions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Commands\ICommand.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Common\AttachedProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Configuration.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\ConfigurationExtensions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\Colors.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\CombinatorSymbols.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\Converters.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\CssStyleFormatter.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\FeatureNames.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\FunctionNames.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\IPropertyValue.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\IValueConverter.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\Map.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\PrettyStyleFormatter.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\Priority.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\PropertyFlags.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\PropertyNames.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\PseudoClassNames.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\PseudoElementNames.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\RenderDevice.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\RuleNames.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\TransformMatrix.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\UnitNames.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\ValueConverters\AnyValueConverter.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\ValueConverters\ArgumentsValueConverter.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\ValueConverters\BorderRadiusConverter.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\ValueConverters\ConstraintValueConverter.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\ValueConverters\ContinuousValueConverter.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\ValueConverters\DictionaryValueConverter.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\ValueConverters\EndListValueConverter.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\ValueConverters\FunctionValueConverter.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\ValueConverters\GradientConverter.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\ValueConverters\IdentifierValueConverter.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\ValueConverters\ListValueConverter.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\ValueConverters\OneOrMoreValueConverter.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\ValueConverters\OptionValueConverter.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\ValueConverters\OrValueConverter.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\ValueConverters\OrderedOptionsConverter.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\ValueConverters\PeriodicValueConverter.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\ValueConverters\RequiredValueConverter.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\ValueConverters\StartsWithValueConverter.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\ValueConverters\StringValueConverter.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\ValueConverters\StringsValueConverter.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\ValueConverters\StructValueConverter.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\ValueConverters\UnorderedOptionsConverter.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\ValueConverters\UrlValueConverter.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\Values\Angle.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\Values\Color.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\Values\Counter.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\Values\CubicBezierTimingFunction.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\Values\Frequency.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\Values\GradientStop.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\Values\IGradient.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\Values\IImageSource.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\Values\ITimingFunction.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\Values\ITransform.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\Values\Length.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\Values\LinearGradient.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\Values\MatrixTransform.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\Values\Number.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\Values\Percent.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\Values\PerspectiveTransform.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\Values\Point.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\Values\RadialGradient.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\Values\Resolution.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\Values\RotateTransform.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\Values\ScaleTransform.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\Values\Shadow.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\Values\Shape.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\Values\SkewTransform.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\Values\StepsTimingFunction.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\Values\Time.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Css\Values\TranslateTransform.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Attr.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\CharacterData.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Collections\HtmlAllCollection.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Collections\HtmlCollection.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Collections\HtmlFormControlsCollection.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Collections\MediaList.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Collections\NamedNodeMap.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Collections\NodeIterator.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Collections\NodeList.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Collections\OptionsCollection.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Collections\Range.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Collections\SettableTokenList.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Collections\StringList.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Collections\StringMap.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Collections\StyleCollection.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Collections\TokenList.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Collections\TreeWalker.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Comment.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Constants\AdjacentPosition.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Constants\Alignment.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Constants\CacheStatus.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Constants\ContentEditableMode.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Constants\CssRuleType.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Constants\DirectionMode.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Constants\DocumentPositions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Constants\DocumentReadyState.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Constants\DomError.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Constants\EventPhase.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Constants\FilterResult.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Constants\FilterSettings.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Constants\HorizontalAlignment.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Constants\KeyboardLocation.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Constants\MediaControllerPlaybackState.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Constants\MediaErrorCode.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Constants\MediaNetworkState.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Constants\MediaReadyState.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Constants\MouseButton.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Constants\MouseButtons.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Constants\NodeType.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Constants\QuirksMode.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Constants\RangePosition.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Constants\RangeType.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Constants\Sandboxes.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Constants\ShadowRootMode.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Constants\SimpleChoice.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Constants\TableFrames.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Constants\TableRules.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Constants\TextTrackMode.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Constants\TrackReadyState.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Constants\VerticalAlignment.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Constants\Visibility.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Constants\WheelMode.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Constants\WordBreak.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\ConditionFunctions\AndCondition.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\ConditionFunctions\DeclarationCondition.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\ConditionFunctions\EmptyCondition.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\ConditionFunctions\GroupCondition.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\ConditionFunctions\NotCondition.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\ConditionFunctions\OrCondition.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Constants\AnimationDirection.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Constants\AnimationFillStyle.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Constants\BackgroundAttachment.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Constants\BackgroundRepeat.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Constants\BlendMode.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Constants\BorderRepeat.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Constants\BoxModel.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Constants\BreakMode.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Constants\ClearMode.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Constants\DisplayMode.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Constants\Floating.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Constants\FontSize.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Constants\FontStretch.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Constants\FontStyle.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Constants\FontVariant.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Constants\FontWeight.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Constants\HoverAbility.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Constants\LineStyle.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Constants\ListPosition.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Constants\ListStyle.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Constants\ObjectFitting.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Constants\OverflowMode.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Constants\OverflowWrap.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Constants\PlayState.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Constants\PointerAccuracy.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Constants\PositionMode.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Constants\ScriptingState.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Constants\StrokeLinecap.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Constants\StrokeLinejoin.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Constants\SystemCursor.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Constants\SystemFont.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Constants\TextAlignLast.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Constants\TextAnchor.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Constants\TextDecorationLine.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Constants\TextDecorationStyle.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Constants\TextJustify.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Constants\TextTransform.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Constants\UnicodeMode.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Constants\UpdateFrequency.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Constants\Whitespace.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\CssComment.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\CssMediaQueryList.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\CssMedium.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\CssNode.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\CssProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\CssStyleDeclaration.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\CssStyleEngine.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\CssStyleSheet.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\CssValue.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\DocumentFunction.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\DocumentFunctions\DomainFunction.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\DocumentFunctions\RegexpFunction.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\DocumentFunctions\UrlFunction.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\DocumentFunctions\UrlPrefixFunction.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\MediaFeature.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\MediaFeatures\AspectRatioMediaFeature.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\MediaFeatures\ColorIndexMediaFeature.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\MediaFeatures\ColorMediaFeature.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\MediaFeatures\DeviceAspectRatioMediaFeature.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\MediaFeatures\DeviceHeightMediaFeature.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\MediaFeatures\DevicePixelRatioFeature.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\MediaFeatures\DeviceWidthMediaFeature.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\MediaFeatures\GridMediaFeature.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\MediaFeatures\HeightMediaFeature.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\MediaFeatures\HoverMediaFeature.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\MediaFeatures\MonochromeMediaFeature.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\MediaFeatures\OrientationMediaFeature.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\MediaFeatures\PointerMediaFeature.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\MediaFeatures\ResolutionMediaFeature.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\MediaFeatures\ScanMediaFeature.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\MediaFeatures\ScriptingMediaFeature.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\MediaFeatures\UnknownMediaFeature.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\MediaFeatures\UpdateFrequencyMediaFeature.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\MediaFeatures\WidthMediaFeature.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Animation\CssAnimationDelayProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Animation\CssAnimationDirectionProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Animation\CssAnimationDurationProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Animation\CssAnimationFillModeProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Animation\CssAnimationIterationCountProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Animation\CssAnimationNameProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Animation\CssAnimationPlayStateProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Animation\CssAnimationProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Animation\CssAnimationTimingFunctionProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Background\CssBackgroundAttachmentProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Background\CssBackgroundClipProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Background\CssBackgroundColorProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Background\CssBackgroundImageProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Background\CssBackgroundOriginProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Background\CssBackgroundPositionProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Background\CssBackgroundProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Background\CssBackgroundRepeatProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Background\CssBackgroundSizeProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Border\CssBorderBottomColorProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Border\CssBorderBottomProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Border\CssBorderBottomStyleProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Border\CssBorderBottomWidthProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Border\CssBorderCollapseProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Border\CssBorderColorProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Border\CssBorderLeftColorProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Border\CssBorderLeftProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Border\CssBorderLeftStyleProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Border\CssBorderLeftWidthProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Border\CssBorderProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Border\CssBorderRightColorProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Border\CssBorderRightProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Border\CssBorderRightStyleProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Border\CssBorderRightWidthProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Border\CssBorderSpacingProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Border\CssBorderStyleProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Border\CssBorderTopColorProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Border\CssBorderTopProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Border\CssBorderTopStyleProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Border\CssBorderTopWidthProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Border\CssBorderWidthProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\BorderImage\CssBorderImageOutsetProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\BorderImage\CssBorderImageProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\BorderImage\CssBorderImageRepeatProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\BorderImage\CssBorderImageSliceProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\BorderImage\CssBorderImageSourceProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\BorderImage\CssBorderImageWidthProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\BorderRadius\CssBorderBottomLeftRadiusProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\BorderRadius\CssBorderBottomRightRadiusProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\BorderRadius\CssBorderRadiusProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\BorderRadius\CssBorderTopLeftRadiusProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\BorderRadius\CssBorderTopRightRadiusProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Box\CssBoxDecorationBreak.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Box\CssBoxShadowProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Box\CssMarginBottomProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Box\CssMarginLeftProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Box\CssMarginProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Box\CssMarginRightProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Box\CssMarginTopProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Box\CssPaddingBottomProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Box\CssPaddingLeftProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Box\CssPaddingProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Box\CssPaddingRightProperty .cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Box\CssPaddingTopProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Break\CssBreakAfterProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Break\CssBreakBeforeProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Break\CssBreakInsideProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Break\CssPageBreakAfterProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Break\CssPageBreakBeforeProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Break\CssPageBreakInsideProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Columns\CssColumnCountProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Columns\CssColumnFillProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Columns\CssColumnGapProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Columns\CssColumnRuleColorProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Columns\CssColumnRuleProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Columns\CssColumnRuleStyleProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Columns\CssColumnRuleWidthProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Columns\CssColumnSpanProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Columns\CssColumnWidthProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Columns\CssColumnsProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Coordinate\CssBottomProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Coordinate\CssHeightProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Coordinate\CssLeftProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Coordinate\CssMaxHeightProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Coordinate\CssMaxWidthProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Coordinate\CssMinHeightProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Coordinate\CssMinWidthProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Coordinate\CssRightProperty .cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Coordinate\CssTopProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Coordinate\CssWidthProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\CssCaptionSideProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\CssContentProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\CssCursorProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\CssEmptyCellsProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\CssFeatureProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\CssOrphansProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\CssQuotesProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\CssShorthandProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\CssTableLayoutProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\CssUnicodeBidiProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\CssUnknownProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\CssWidowsProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Flow\CssClearProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Flow\CssDisplayProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Flow\CssFloatProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Flow\CssOverflowProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Flow\CssPositionProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Flow\CssZIndexProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Font\CssColorProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Font\CssFontFamilyProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Font\CssFontProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Font\CssFontSizeAdjustProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Font\CssFontSizeProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Font\CssFontStretchProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Font\CssFontStyleProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Font\CssFontVariantProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Font\CssFontWeightProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Font\CssLetterSpacingProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Font\CssLineHeightProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Font\CssSrcProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Font\CssUnicodeRangeProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Font\CssWordSpacingProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\List\CssCounterIncrementProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\List\CssCounterResetProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\List\CssListStyleImageProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\List\CssListStylePositionProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\List\CssListStyleProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\List\CssListStyleTypeProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Outline\CssOutlineColorProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Outline\CssOutlineProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Outline\CssOutlineStyleProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Outline\CssOutlineWidthProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Sizing\CssObjectFitProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Sizing\CssObjectPositionProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Stroke\CssStrokeDasharrayProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Stroke\CssStrokeDashoffsetProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Stroke\CssStrokeLinecapProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Stroke\CssStrokeLinejoinProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Stroke\CssStrokeMiterlimitProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Stroke\CssStrokeOpacityProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Stroke\CssStrokeProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Stroke\CssStrokeWidthProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Text\CssDirectionProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Text\CssOverflowWrapProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Text\CssTextAlignLastProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Text\CssTextAlignProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Text\CssTextAnchorProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Text\CssTextDecorationColorProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Text\CssTextDecorationLineProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Text\CssTextDecorationProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Text\CssTextDecorationStyleProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Text\CssTextIndentProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Text\CssTextJustifyProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Text\CssTextShadowProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Text\CssTextTransformProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Text\CssVerticalAlignProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Text\CssWhiteSpaceProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Text\CssWordBreakProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Transform\CssPerspectiveOriginProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Transform\CssPerspectiveProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Transform\CssTransformOriginProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Transform\CssTransformProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Transform\CssTransformStyleProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Transition\CssTransitionDelayProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Transition\CssTransitionDurationProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Transition\CssTransitionProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Transition\CssTransitionPropertyProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Transition\CssTransitionTimingFunctionProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Visibility\CssBackfaceVisibilityProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Visibility\CssClipProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Visibility\CssOpacityProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Properties\Visibility\CssVisibilityProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Rules\CssCharsetRule.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Rules\CssConditionRule.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Rules\CssDeclarationRule.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Rules\CssDocumentRule.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Rules\CssFontFaceRule.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Rules\CssGroupingRule.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Rules\CssImportRule.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Rules\CssKeyframeRule.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Rules\CssKeyframesRule.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Rules\CssMediaRule.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Rules\CssNamespaceRule.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Rules\CssPageRule.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Rules\CssRule.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Rules\CssRuleList.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Rules\CssStyleRule.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Rules\CssSupportsRule.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Rules\CssUnknownRule.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Rules\CssViewportRule.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Selector\ChildSelector.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Selector\ComplexSelector.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Selector\CompoundSelector.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Selector\FirstChildSelector.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Selector\FirstColumnSelector.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Selector\FirstTypeSelector.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Selector\KeyframeSelector.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Selector\LastChildSelector.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Selector\LastColumnSelector.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Selector\LastTypeSelector.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Selector\ListSelector.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Selector\Selectors.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Selector\SimpleSelector.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Css\Selector\UnknownSelector.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Document.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\DocumentFragment.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\DocumentType.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\DomEventHandler.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\DomException.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\DomImplementation.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Element.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Entity.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\EntityReference.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\EventTarget.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Events\CompositionEvent.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Events\CssErrorEvent.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Events\CssParseEvent.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Events\CustomEvent.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Events\ErrorEvent.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Events\Event.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Events\FocusEvent.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Events\HashChangedEvent.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Events\HtmlErrorEvent.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Events\HtmlParseEvent.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Events\InputEvent.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Events\InteractivityEvent.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Events\KeyboardEvent.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Events\MediaQueryListEvent.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Events\MessageEvent.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Events\ModifierExtensions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Events\MouseEvent.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Events\PageTransitionEvent.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Events\RequestEvent.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Events\TouchEvent.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Events\TrackEvent.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Events\UiEvent.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Events\WheelEvent.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlAddressElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlAnchorElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlAppletElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlAreaElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlAudioElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlBaseElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlBaseFontElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlBgsoundElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlBigElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlBodyElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlBoldElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlBreakRowElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlButtonElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlCanvasElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlCodeElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlDataElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlDataListElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlDefinitionListElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlDetailsElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlDialogElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlDirectoryElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlDivElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlDocument.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlEmbedElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlEmphasizeElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlFieldSetElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlFontElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlFormControlElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlFormControlElementWithState.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlFormElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlFrameElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlFrameElementBase.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlFrameOwnerElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlFrameSetElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlHeadElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlHeadingElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlHrElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlHtmlElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlIFrameElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlImageElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlInputElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlIsIndexElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlItalicElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlKeygenElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlLabelElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlLegendElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlLinkElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlListItemElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlMapElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlMarqueeElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlMediaElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlMenuElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlMenuItemElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlMetaElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlMeterElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlModElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlNoEmbedElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlNoFramesElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlNoNewlineElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlNoScriptElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlObjectElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlOptionElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlOptionsGroupElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlOrderedListElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlOutputElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlParagraphElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlParamElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlPictureElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlPlaintextElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlPreElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlProgressElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlQuoteElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlRbElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlRpElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlRtElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlRtcElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlRubyElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlScriptElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlSelectElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlSemanticElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlSlotElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlSmallElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlSourceElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlSpanElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlStrikeElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlStrongElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlStruckElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlStyleElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlTableCaptionElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlTableCellElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlTableColElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlTableColgroupElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlTableDataCellElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlTableElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlTableHeaderCellElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlTableRowElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlTableSectionElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlTeletypeTextElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlTemplateElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlTextAreaElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlTextFormControlElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlTimeElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlTitleElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlTrackElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlUnderlineElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlUnknownElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlUnorderedListElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlUrlBaseElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlVideoElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlWbrElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\HtmlXmpElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Html\ValidityState.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\IAttributeObserver.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Internal\DefaultAttributeObserver.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Io\FileList.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Location.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Mathml\MathAnnotationXmlElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Mathml\MathElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Mathml\MathIdentifierElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Mathml\MathNumberElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Mathml\MathOperatorElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Mathml\MathStringElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Mathml\MathTextElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\MutationCallback.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\MutationHost.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\MutationObserver.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\MutationRecord.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Node.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\NodeFilter.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Notation.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\ProcessingInstruction.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\PseudoElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\ShadowRoot.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\StyleSheetList.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Svg\SvgCircleElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Svg\SvgDescElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Svg\SvgDocument.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Svg\SvgElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Svg\SvgForeignObjectElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Svg\SvgSvgElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Svg\SvgTitleElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\TextNode.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Window.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Xml\XmlDocument.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Dom\Xml\XmlElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Extensions\ApiExtensions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Extensions\AttrExtensions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Extensions\CharExtensions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Extensions\CollectionExtensions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Extensions\ConfigurationExtensions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Extensions\ContextExtensions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Extensions\DocumentExtensions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Extensions\ElementExtensions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Extensions\EventLoopExtensions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Extensions\EventTargetExtensions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Extensions\FormDataSetExtensions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Extensions\FormatExtensions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Extensions\LegacyExtensions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Extensions\NodeExtensions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Extensions\ObjectExtensions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Extensions\ParentNodeExtensions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Extensions\PortableExtensions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Extensions\QueryExtensions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Extensions\RequesterExtensions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Extensions\ResponseExtensions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Extensions\SelectorExtensions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Extensions\SilverlightExtensions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Extensions\StringExtensions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Extensions\StyleExtensions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Extensions\StyleSheetExtensions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Extensions\TokenizerExtensions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Extensions\ValueConverterExtensions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Extensions\ValueExtensions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Extensions\WindowExtensions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Extensions\XmlExtensions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Foundation\CreateDocumentOptions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Foundation\Factory.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Foundation\Keywords.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Foundation\Pool.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Foundation\Punycode.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Foundation\Symbols.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Foundation\TaskEventLoop.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Foundation\TaskEx.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Foundation\TaskPriority.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Foundation\WeakReference.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\AttributeNames.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\EventFlags.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\EventNames.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\FileDataSetEntry.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\FormControlState.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\FormDataSet.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\FormDataSetEntry.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\HtmlEntityService.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\HtmlMarkupFormatter.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\IFormDataSetVisitor.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\IFormSubmitter.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\InputTypeNames.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\InputTypes\BaseInputType.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\InputTypes\ButtonInputType.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\InputTypes\CheckedInputType.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\InputTypes\ColorInputType.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\InputTypes\DateInputType.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\InputTypes\DateTimeInputType.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\InputTypes\DatetimeLocalInputType.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\InputTypes\EmailInputType.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\InputTypes\FileInputType.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\InputTypes\ImageInputType.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\InputTypes\MonthInputType.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\InputTypes\NumberInputType.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\InputTypes\PatternInputType.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\InputTypes\SubmitInputType.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\InputTypes\TextInputType.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\InputTypes\TimeInputType.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\InputTypes\UrlInputType.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\InputTypes\WeekInputType.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\LinkRelNames.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\LinkRels\BaseLinkRelation.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\LinkRels\ImportLinkRelation.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\LinkRels\StyleSheetLinkRelation.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\NamespaceNames.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\NodeFlags.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\PrettyMarkupFormatter.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\SourceSet.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\Submitters\Json\JsonArray.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\Submitters\Json\JsonElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\Submitters\Json\JsonObject.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\Submitters\Json\JsonStep.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\Submitters\Json\JsonValue.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\Submitters\JsonFormDataSetVisitor.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\Submitters\MultipartFormDataSetVisitor.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\Submitters\PlaintextFormDataSetVisitor.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\Submitters\UrlEncodedFormDataSetVisitor.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\TagNames.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Html\TextDataSetEntry.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\IBrowsingContext.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\ICancellable.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\IConfiguration.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\IEventLoop.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\IMarkupFormattable.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\IMarkupFormatter.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\IStyleFormattable.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\IStyleFormatter.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Css\IConditionFunction.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Css\ICssCharsetRule.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Css\ICssComment.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Css\ICssConditionRule.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Css\ICssCounterStyleRule.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Css\ICssDocumentRule.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Css\ICssFontFaceRule.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Css\ICssFontFeatureValuesRule.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Css\ICssGroupingRule.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Css\ICssImportRule.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Css\ICssKeyframeRule.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Css\ICssKeyframesRule.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Css\ICssMarginRule.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Css\ICssMediaRule.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Css\ICssMedium.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Css\ICssNamespaceRule.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Css\ICssNode.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Css\ICssPageRule.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Css\ICssProperties .cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Css\ICssProperty.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Css\ICssRule.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Css\ICssRuleCreator.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Css\ICssRuleList.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Css\ICssStyleDeclaration.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Css\ICssStyleRule.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Css\ICssStyleSheet.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Css\ICssSupportsRule.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Css\IDocumentFunction.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Css\IElementCssInlineStyle.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Css\IKeyframeSelector.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Css\IMediaFeature.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Css\IMediaList.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Css\IMediaQueryList.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Css\ISelector.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Css\IStyleUtilities.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Events\IGlobalEventHandlers.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Events\IMessagePort.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Events\ITouchList.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Events\ITouchPoint.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Events\IWindowEventHandlers.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlAnchorElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlAreaElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlAudioElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlBaseElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlBodyElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlBreakRowElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlButtonElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlCanvasElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlCommandElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlDataElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlDataListElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlDetailsElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlDialogElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlDivElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlDocument.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlEmbedElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlFieldSetElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlFormControlsCollection.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlFormElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlHeadElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlHeadingElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlHrElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlHtmlElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlImageElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlInlineFrameElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlInputElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlKeygenElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlLabelElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlLegendElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlLinkElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlListItemElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlMapElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlMarqueeElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlMediaElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlMenuElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlMenuItemElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlMetaElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlMeterElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlModElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlObjectElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlOptionElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlOptionsCollection.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlOptionsGroupElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlOrderedListElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlOutputElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlParagraphElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlParamElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlPreElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlProgressElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlQuoteElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlScriptElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlSelectElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlSlotElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlSourceElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlSpanElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlStyleElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlTableCaptionElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlTableCellElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlTableColumnElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlTableDataCellElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlTableElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlTableHeaderCellElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlTableRowElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlTableSectionElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlTemplateElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlTextAreaElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlTimeElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlTitleElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlTrackElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlUnknownElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlUnorderedListElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IHtmlVideoElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\ILabelabelElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IValidation.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Html\IValidityState.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\IApplicationCache.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\IAttr.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\IBindable.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\ICharacterData.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\IChildNode.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\IComment.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\IDocument.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\IDocumentFragment.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\IDocumentStyle.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\IDocumentType.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\IDomException.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\IElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\IEventTarget.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\IHistory.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\IHtmlAllCollection.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\IHtmlCollection.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\IImplementation.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\ILinkImport.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\ILinkStyle.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\ILoadableElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\ILocation.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\IMutationRecord.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\INamedNodeMap.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\INode.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\INodeIterator.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\INodeList.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\INonDocumentTypeChildNode.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\INonElementParentNode.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\IParentNode.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\IProcessingInstruction.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\IPseudoElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\IRange.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\ISettableTokenList.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\IShadowRoot.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\IStringList.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\IStringMap.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\IStyleSheet.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\IStyleSheetList.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\IText.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\ITokenList.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\ITreeWalker.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\IUrlUtilities.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\IWindow.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\IWindowTimers.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Io\IBlob.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Io\IFile.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Io\IFileList.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Media\IAudioTrack.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Media\IAudioTrackList.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Media\ICanvasRenderingContext2D.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Media\IMediaController.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Media\IMediaError.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Media\IRenderingContext.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Media\ITextTrack.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Media\ITextTrackCue.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Media\ITextTrackCueList.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Media\ITextTrackList.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Media\ITimeRanges.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Media\IVideoTrack.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Media\IVideoTrackList.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Navigator\INavigator.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Navigator\INavigatorContentUtilities.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Navigator\INavigatorId.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Navigator\INavigatorOnline.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Navigator\INavigatorStorageUtilities.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Svg\ISvgCircleElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Svg\ISvgDescriptionElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Svg\ISvgDocument.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Svg\ISvgElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Svg\ISvgForeignObjectElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Svg\ISvgSvgElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Svg\ISvgTitleElement.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Interfaces\Xml\IXmlDocument.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Network\CorsRequest.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Network\CorsSetting.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Network\Default\BaseLoader.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Network\Default\DataRequester.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Network\Default\DocumentLoader.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Network\Default\Download.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Network\Default\HttpRequester.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Network\Default\Request.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Network\Default\ResourceLoader.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Network\Default\Response.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Network\DocumentRequest.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Network\HeaderNames.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Network\HttpMethod.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Network\IDocumentLoader.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Network\IDownload.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Network\ILoader.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Network\IRequest.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Network\IRequester.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Network\IResourceLoader.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Network\IResponse.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Network\MimeType.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Network\MimeTypeNames.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Network\OriginBehavior.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Network\PortNumbers.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Network\ProtocolNames.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Network\RequestProcessors\BaseRequestProcessor.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Network\RequestProcessors\DocumentRequestProcessor.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Network\RequestProcessors\FrameRequestProcessor.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Network\RequestProcessors\IRequestProcessor.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Network\RequestProcessors\ImageRequestProcessor.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Network\RequestProcessors\MediaRequestProcessor.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Network\RequestProcessors\ObjectRequestProcessor.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Network\RequestProcessors\ResourceRequestProcessor.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Network\RequestProcessors\ScriptRequestProcessor.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Network\RequestProcessors\StyleSheetRequestProcessor.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Network\ResourceRequest.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Network\VirtualResponse.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\BaseTokenizer.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Css\CssBuilder.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Css\CssCombinator.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Css\CssParseError.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Css\CssParser.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Css\CssParserExtensions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Css\CssParserOptions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Css\CssSelectorConstructor.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Css\CssTokenType.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Css\CssTokenizer.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Css\CssValueBuilder.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Css\Tokens\CssColorToken.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Css\Tokens\CssCommentToken.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Css\Tokens\CssFunctionToken.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Css\Tokens\CssKeywordToken.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Css\Tokens\CssNumberToken.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Css\Tokens\CssRangeToken.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Css\Tokens\CssStringToken.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Css\Tokens\CssToken.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Css\Tokens\CssUnitToken.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Css\Tokens\CssUrlToken.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Html\HtmlDomBuilder.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Html\HtmlForeignExtensions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Html\HtmlParseError.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Html\HtmlParseException.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Html\HtmlParseMode.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Html\HtmlParser.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Html\HtmlParserExtensions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Html\HtmlParserOptions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Html\HtmlTokenType.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Html\HtmlTokenizer.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Html\HtmlTreeMode.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Html\Tokens\HtmlDoctypeToken.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Html\Tokens\HtmlTagToken.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Html\Tokens\HtmlToken.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Xml\Tokens\XmlCDataToken.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Xml\Tokens\XmlCharacterToken.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Xml\Tokens\XmlCommentToken.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Xml\Tokens\XmlDeclarationToken.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Xml\Tokens\XmlDoctypeToken.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Xml\Tokens\XmlEndOfFileToken.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Xml\Tokens\XmlPIToken.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Xml\Tokens\XmlTagToken.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Xml\Tokens\XmlToken.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Xml\XmlDomBuilder.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Xml\XmlParseError.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Xml\XmlParseException.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Xml\XmlParser.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Xml\XmlParserExtensions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Xml\XmlParserOptions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Xml\XmlTokenType.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Xml\XmlTokenizer.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Parser\Xml\XmlTreeMode.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Properties\AssemblyInfo.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\Default\AttributeSelectorFactory.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\Default\ContextFactory.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\Default\CssPropertyFactory.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\Default\DocumentFactory.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\Default\EventFactory.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\Default\HtmlElementFactory.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\Default\InputTypeFactory.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\Default\LinkRelationFactory.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\Default\LocaleEncodingProvider.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\Default\MathElementFactory.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\Default\MediaFeatureFactory.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\Default\MemoryCookieProvider.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\Default\PseudoClassSelectorFactory.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\Default\PseudoElementSelectorFactory.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\Default\ServiceFactory.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\Default\StylingService.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\Default\SvgElementFactory.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\IAttributeSelectorFactory.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\ICommandProvider.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\IContextFactory.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\ICookieProvider.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\ICssPropertyFactory.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\IDocumentFactory.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\IElementFactory.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\IEncodingProvider.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\IEntityProvider.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\IEventFactory.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\IInputTypeFactory.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\IIntegrityProvider.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\ILinkRelationFactory.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\IMediaFeatureFactory.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\IPseudoClassSelectorFactory.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\IPseudoElementSelectorFactory.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\IRenderingService.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\IResourceService.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\IScriptingProvider.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\IServiceFactory.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\ISpellCheckService.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\IStylingProvider.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\Media\IAudioInfo.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\Media\IImageInfo.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\Media\IMediaInfo.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\Media\IObjectInfo.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\Media\IResourceInfo.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\Media\IVideoInfo.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\Scripting\IScriptEngine.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\Scripting\ScriptOptions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\Styling\ICssStyleEngine.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\Styling\IStyleEngine.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Services\Styling\StyleOptions.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\TextEncoding.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\TextPosition.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\TextRange.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\TextSource.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\TextView.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Url.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Xhtml\XhtmlMarkupFormatter.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Xml\XmlEntityService.cs" />
+    <Compile Include="Assets\YoutubePlayer\AngleSharp\Xml\XmlMarkupFormatter.cs" />
+    <None Include="Assets\YoutubePlayer\AngleSharp\AngleSharp.asmdef" />
+    <Reference Include="UnityEditor.UI">
+      <HintPath>/Users/bharath/Desktop/Projects/Dynamic image target memory optimisation/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>/Users/bharath/Desktop/Projects/Dynamic image target memory optimisation/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AndroidJNIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DSPGraphModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.DSPGraphModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SubsystemsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TextCoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.VR">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/Managed/UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.OSXStandalone.Extensions">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
+      <HintPath>/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>/Users/bharath/Desktop/Projects/Dynamic image target memory optimisation/Assets/YoutubePlayer/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Unsafe">
+      <HintPath>/Users/bharath/Desktop/Projects/Dynamic image target memory optimisation/Library/PackageCache/com.unity.burst@1.2.0-preview.11/Unity.Burst.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>/Users/bharath/Desktop/Projects/Dynamic image target memory optimisation/Library/PackageCache/com.unity.collections@0.5.0-preview.9/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/Microsoft.Win32.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.AppContext">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.AppContext.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.Concurrent.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.NonGeneric">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.NonGeneric.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Specialized">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.Specialized.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.EventBasedAsync">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.EventBasedAsync.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Primitives">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.TypeConverter">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.TypeConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Common">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Contracts">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Debug">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Debug.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.FileVersionInfo">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.FileVersionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.StackTrace.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TextWriterTraceListener">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tools">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TraceSource">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.TraceSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tracing">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Tracing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Primitives">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Drawing.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Dynamic.Runtime">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Dynamic.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.Calendars.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Extensions">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.ZipFile">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Compression.ZipFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.DriveInfo">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.DriveInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Watcher">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.Watcher.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.IsolatedStorage">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.IO.IsolatedStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.MemoryMappedFiles">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.IO.MemoryMappedFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipes">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Pipes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.UnmanagedMemoryStream">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.IO.UnmanagedMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Expressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Parallel">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Queryable">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Queryable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NameResolution">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Net.NameResolution.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NetworkInformation">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Net.NetworkInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Ping">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Ping.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Requests">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Requests.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Security">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebHeaderCollection">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebHeaderCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets.Client">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebSockets.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebSockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ObjectModel">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.ObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Extensions">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Primitives">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Reader">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.Reader.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.ResourceManager">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Writer">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.Writer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.VisualC">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.CompilerServices.VisualC.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Handles">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Handles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.InteropServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Numerics">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Formatters.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Json">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Primitives">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Xml">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Claims">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Claims.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Csp">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Csp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Principal.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.SecureString">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Security.SecureString.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.Extensions">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Text.Encoding.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Text.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Text.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Overlapped">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Overlapped.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Parallel">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Tasks.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Thread">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Thread.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.ThreadPool">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.ThreadPool.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Timer">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Timer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.ReaderWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XDocument">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XPath.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlDocument">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XmlDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlSerializer">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XmlSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/Extensions/2.0.0/System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/System.ComponentModel.Composition.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/System.IO.Compression.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/System.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/System.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/System.ServiceModel.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/System.Transactions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/System.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Serialization">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/System.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.2.2f1/2019.3.0f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
